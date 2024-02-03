@@ -12,6 +12,8 @@ class University{
     }
   }
 
+  String get name => _name!;
+
   void Display(){
     print(_name);
     print(_year);

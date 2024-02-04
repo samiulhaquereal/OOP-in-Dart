@@ -1,6 +1,5 @@
 // abstract class Shape
 abstract class Shape {
-  // abstract method area
   double get area;
 }
 
@@ -55,3 +54,30 @@ void main() {
   // print the total area
   print("Total Area of Region: ${region.totalArea}");
 }
+
+
+/*
+// Define generic method
+double getAverage<T extends num>(T value1, T value2) {
+  return (value1 + value2) / 2;
+}
+
+void main() {
+  // call the generic method
+  print("Average of int: ${getAverage<int>(10, 20)}");
+  print("Average of double: ${getAverage<double>(10.5, 20.5)}");
+}
+*/
+
+/*
+// Define generic method
+T genericMethod<T>(T value1, U value2) {
+  return value1+value2;
+}
+
+void main() {
+  // call the generic method
+  print(genericMethod<int, String>(10, "Hello"));
+  print(genericMethod<String, int>("Hello", 10));
+}
+*/
